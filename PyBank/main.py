@@ -39,13 +39,13 @@ for i in range(len(months)-1):
     total_change.append(prof_loss[i+1]-prof_loss[i])
 
 #print results
-print("/Financial Analysis/") 
-print("--------------------------------/")
+print("\nFinancial Analysis") 
+print("--------------------------------")
 print("Total Months: " + str(len(months)))
 print("Total: $" + str(sum(prof_loss)))
 print("Average Change: $" + str(round(sum(total_change)/len(total_change),2)))
 print("Greatest Increase in Profits: " + months[max_inc_index] + " ($" + str(max_inc) + ")")
-print("Greatest Decrease in Profits: " + months[max_dec_index] + " ($" + str(max_dec) + ")")
+print("Greatest Decrease in Profits: " + months[max_dec_index] + " ($" + str(max_dec) + ")\n")
 
 #write results to text file
 f = open("analysis\PyBank_results.txt","w")
